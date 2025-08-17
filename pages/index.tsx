@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
 import Pill from "@/components/ui/Pill";
 import PropertyCard from "@/components/ui/PropertyCard";
 import { PROPERTYLISTINGSAMPLE, HERO_BACKGROUND_IMAGE } from "@/constants";
@@ -48,7 +46,6 @@ const HomePage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <Header />
 
       {/* Hero Section */}
       <section className="relative h-96 md:h-[500px] lg:h-[600px] overflow-hidden">
@@ -135,8 +132,6 @@ const HomePage: React.FC = () => {
           </div>
         )}
       </section>
-
-      <Footer />
     </div>
   );
 };
